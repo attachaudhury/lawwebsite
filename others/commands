@@ -1,0 +1,10 @@
+sudo rm /etc/nginx/sites-enabled/csj
+
+sudo ln -s /etc/nginx/sites-available/csj /etc/nginx/sites-enabled/
+
+
+sudo nginx -t
+sudo nginx -s reload
+
+
+sudo certbot --nginx -d ravicosoft.com
